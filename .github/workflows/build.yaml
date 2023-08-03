@@ -15,6 +15,11 @@ jobs:
       - name: Check Node v
         run: node -v
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16.20.1'
+
       - name: Build front
         run: |
           npm install
